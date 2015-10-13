@@ -1,2 +1,2 @@
 # SwiftShapedButton
-The swift version of OBShapedButton
+The swift version of [OBShapedButton](https://github.com/ole/OBShapedButton)
