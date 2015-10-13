@@ -13,6 +13,10 @@
 		C8037B781BCCCB1A0072795C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8037B771BCCCB1A0072795C /* Assets.xcassets */; };
 		C8037B7B1BCCCB1A0072795C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8037B791BCCCB1A0072795C /* LaunchScreen.storyboard */; };
 		C8037B861BCCCB1A0072795C /* YQShapedButtonDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8037B851BCCCB1A0072795C /* YQShapedButtonDemoTests.swift */; };
+		C8037B911BCCCB740072795C /* YQShapedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8037B901BCCCB740072795C /* YQShapedButton.swift */; };
+		C8037B941BCCCFA30072795C /* UIImage+GetColorAtPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8037B931BCCCFA30072795C /* UIImage+GetColorAtPoint.swift */; };
+		C8037B971BCCDEC60072795C /* starBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = C8037B951BCCDEC60072795C /* starBtn.png */; };
+		C8037B981BCCDEC60072795C /* starBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8037B961BCCDEC60072795C /* starBtn@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		C8037B811BCCCB1A0072795C /* YQShapedButtonDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQShapedButtonDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8037B851BCCCB1A0072795C /* YQShapedButtonDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQShapedButtonDemoTests.swift; sourceTree = "<group>"; };
 		C8037B871BCCCB1A0072795C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8037B901BCCCB740072795C /* YQShapedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YQShapedButton.swift; path = YQShapedButton/YQShapedButton.swift; sourceTree = "<group>"; };
+		C8037B931BCCCFA30072795C /* UIImage+GetColorAtPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+GetColorAtPoint.swift"; sourceTree = "<group>"; };
+		C8037B951BCCDEC60072795C /* starBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starBtn.png; sourceTree = "<group>"; };
+		C8037B961BCCDEC60072795C /* starBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "starBtn@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +85,15 @@
 		C8037B6F1BCCCB1A0072795C /* YQShapedButtonDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C8037B951BCCDEC60072795C /* starBtn.png */,
+				C8037B961BCCDEC60072795C /* starBtn@2x.png */,
 				C8037B701BCCCB1A0072795C /* AppDelegate.swift */,
 				C8037B721BCCCB1A0072795C /* ViewController.swift */,
 				C8037B741BCCCB1A0072795C /* Main.storyboard */,
 				C8037B771BCCCB1A0072795C /* Assets.xcassets */,
 				C8037B791BCCCB1A0072795C /* LaunchScreen.storyboard */,
 				C8037B7C1BCCCB1A0072795C /* Info.plist */,
+				C8037B921BCCCB850072795C /* YQShapedButton */,
 			);
 			path = YQShapedButtonDemo;
 			sourceTree = "<group>";
@@ -94,6 +105,15 @@
 				C8037B871BCCCB1A0072795C /* Info.plist */,
 			);
 			path = YQShapedButtonDemoTests;
+			sourceTree = "<group>";
+		};
+		C8037B921BCCCB850072795C /* YQShapedButton */ = {
+			isa = PBXGroup;
+			children = (
+				C8037B901BCCCB740072795C /* YQShapedButton.swift */,
+				C8037B931BCCCFA30072795C /* UIImage+GetColorAtPoint.swift */,
+			);
+			name = YQShapedButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +196,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8037B971BCCDEC60072795C /* starBtn.png in Resources */,
+				C8037B981BCCDEC60072795C /* starBtn@2x.png in Resources */,
 				C8037B7B1BCCCB1A0072795C /* LaunchScreen.storyboard in Resources */,
 				C8037B781BCCCB1A0072795C /* Assets.xcassets in Resources */,
 				C8037B761BCCCB1A0072795C /* Main.storyboard in Resources */,
@@ -198,6 +220,8 @@
 			files = (
 				C8037B731BCCCB1A0072795C /* ViewController.swift in Sources */,
 				C8037B711BCCCB1A0072795C /* AppDelegate.swift in Sources */,
+				C8037B941BCCCFA30072795C /* UIImage+GetColorAtPoint.swift in Sources */,
+				C8037B911BCCCB740072795C /* YQShapedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +409,7 @@
 				C8037B8C1BCCCB1A0072795C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8037B8D1BCCCB1A0072795C /* Build configuration list for PBXNativeTarget "YQShapedButtonDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -393,6 +418,7 @@
 				C8037B8F1BCCCB1A0072795C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

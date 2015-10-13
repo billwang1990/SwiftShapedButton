@@ -20,6 +20,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func clickButton(sender: AnyObject) {
+        
+        print("normal button clicked")
+    }
+
+    @IBAction func clickShapedButton(sender: AnyObject) {
+        
+        print("shaped button clicked")
+        
+    }
 
 }
 
